@@ -10,11 +10,10 @@ This is a personal website that I created based on an existing design. The goal 
 - **CSS Grid**: Another layout system that I used for more complex, two-dimensional layouts.
 - **SASS**: A preprocessor scripting language that extends CSS, allowing for more dynamic and maintainable stylesheets.
 
-## Development Time
+
+## Design Preview
 
 It took me about **1 week** to complete the website. During this time, I worked on building the layout, adding responsive design, and refining the overall aesthetics.
-
-##Design Preview
 
 ![Design Preview][https://github.com/[your-username)/[repository-name]/blob/master/design/desktop-preview.jpg7rawntrue)
 
