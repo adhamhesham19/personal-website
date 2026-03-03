@@ -1,0 +1,94 @@
+.bio{
+    column-gap: 7.4rem;
+    grid-template-columns: repeat(2 ,1fr);
+    align-items: center;
+}
+
+.bio__heading{
+    font-size: var(--font-size-70);
+    font-weight: var(--font-weight-bold);
+            grid-column: 1/-1;
+
+
+
+}
+
+.bio__objctive{
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    margin: 3rem 0 8rem 0;
+    line-height: 1.6;
+}
+.bio__name{
+    font-weight: var(--font-weight-semi-bold);
+}
+.bio__almadrasa{
+    color: var(--color-green);
+}
+
+.bio__linkedin{
+    color: var(--color-dark-blue);
+}
+
+.bio__link{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-semi-bold);
+    text-decoration: none;
+}
+
+.say-hi-link{
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 0.7rem 2.7rem;
+}
+.find-out-link{
+    padding: 0.7rem 0;
+    margin-inline-start: 1.4rem;
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(0.5rem);
+
+    }
+
+    50%{
+             transform: translateY(-0.5rem);
+   
+    }
+
+    75%{
+            transform: translateY(0);
+
+    }
+    100%{
+             transform: translateY(0);
+        
+    }
+}
+
+.bio__arrow{
+    display: inline-block;
+    animation:updown 1s infinite alternate ease-in-out;
+}
+
+.bio__pic-contant{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-self: end;
+}
+.bio__pic-contant::before{
+  content: "";
+  position: absolute;
+  background-color: var(--color-box-img);
+  width: 100%;
+  height: 40rem;
+  z-index: -1;
+  border-radius: 1.8rem;
+  box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+}
+.bio__pic{
+  width: 42.7rem;
+}

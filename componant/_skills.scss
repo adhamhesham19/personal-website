@@ -1,0 +1,27 @@
+/*Siklls Start*/
+
+.skills__list{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    row-gap: 5rem;
+    column-gap: 7.7rem;
+}
+
+.skills__title{
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-semi-bold);
+}
+.skill__years{
+    display: inline-block;
+    font-size: var(--font-size-20);
+    margin-top: 0.5rem;
+}
+.skill__item{
+    transition: var(--transition-timing);
+    user-select: none;
+}
+.skill__item:hover{
+    text-shadow:-1px 1px 18px var(--color-green);
+}
+/*Siklls End*/
+

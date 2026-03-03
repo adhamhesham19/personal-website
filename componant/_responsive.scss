@@ -1,0 +1,116 @@
+@media(max-width:1000px){
+    html{
+        font-size: 8px;
+    }
+
+    .header::before ,.section--with-bg::before{
+        width: 100VW;
+    }
+    
+}
+
+@media(max-width:800px){
+
+    .container{
+        row-gap: 7rem;
+    }
+
+    .section{
+        grid-template-columns: 1fr;
+    }
+
+    .bio__pic-contant{
+        grid-row: 1;
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
+
+    .skills__list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section--with-bg::before ,.header::before {
+        width: 100vw;
+    }
+
+
+    .projcets__main{
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+    .projcets__data:nth-of-type(2){
+        order: 1;
+    }
+
+    .clients__opinions{
+            font-size: var(--font-size-24);
+    }
+}
+
+
+
+@media(max-width:500px){
+
+    .header{
+        padding: 0;
+    }
+
+    .header::before{
+        z-index: 0;
+    }
+    .bio__pic{
+    width: 100%;
+    }
+
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 0.75rem;
+        z-index: 1;
+        align-self: center;
+    }
+
+    
+
+    .burger-menu__bar{
+        height: 0.1rem;
+        width: 3.375rem;
+        background-color: var(--color-text);
+        transition: var(--transition-timing);
+    }
+
+    .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-of-type(1){
+        transform: translateY(9px) rotate(48deg);
+    }
+
+       .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-of-type(2){
+        opacity: 0;
+        visibility: hidden;
+    }
+        .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-of-type(3){
+        transform:translateY(-5px) rotate(-48deg);
+    }
+    
+
+    .burger-menu__checkbox:checked +.navigation{
+        top: 100%;
+    }
+    .navigation{
+       position: absolute; 
+       width: 100vw;
+       top: 0;
+       background-color: var(--color-background);
+       padding: 2rem 0;
+       border-bottom: 0.1rem solid var(--color-text);
+       z-index: -1;
+    }
+
+    .navigation__list{
+        justify-content: center;
+    }
+
+    .toggle{
+        padding: 2rem 0;
+        z-index: 1;
+    }
+}
